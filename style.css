@@ -1,5 +1,4 @@
-/* ---------------- BODY ---------------- */
-body {
+body{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -8,49 +7,79 @@ body {
 }
 
 /* ---------------- GRID POSITIONS ---------------- */
-.puzzle-grid-drop {
-    width: 200px;
-    height: 200px;
-    border: 2px dashed white;
+#grid1-1{
     position: absolute;
-    overflow: hidden; /* ensures dropped piece stays inside */
+    left: 0px;
+    top: 0px;
 }
 
-#grid1-1 { left: 0px;   top: 0px; }
-#grid1-2 { left: 200px; top: 0px; }
-#grid1-3 { left: 400px; top: 0px; }
-#grid2-1 { left: 0px;   top: 200px; }
-#grid2-2 { left: 200px; top: 200px; }
-#grid2-3 { left: 400px; top: 200px; }
-#grid3-1 { left: 0px;   top: 400px; }
-#grid3-2 { left: 200px; top: 400px; }
-#grid3-3 { left: 400px; top: 400px; }
+#grid1-2{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+
+#grid1-3{
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+
+#grid2-1{
+    position: absolute;
+    left: 0px;
+    top: 200px;
+}
+
+#grid2-2{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+#grid2-3{
+    position: absolute;
+    left: 400px;
+    top: 200px;
+}
+
+#grid3-1{
+    position: absolute;
+    left: 0px;
+    top: 400px;
+}
+
+#grid3-2{
+    position: absolute;
+    left: 200px;
+    top: 400px;
+}
+
+#grid3-3{
+    position: absolute;
+    left: 400px;
+    top: 400px;
+}
 
 /* ---------------- PUZZLE PIECES ON RIGHT SIDE ---------------- */
-.draggable-piece {
+#img1-1-draggable, #img1-2-draggable, #img1-3-draggable,
+#img2-1-draggable, #img2-2-draggable, #img2-3-draggable,
+#img3-1-draggable, #img3-2-draggable, #img3-3-draggable {
     position: absolute;
-    width: 200px;   /* now matches grid */
-    height: 200px;  /* now matches grid */
-    cursor: grab;
+    width: 150px; /* adjust as needed */
 }
 
-/* Right-side positions */
-#img1-1-draggable { top: 0px;   right: 400px; }
-#img1-2-draggable { top: 0px;   right: 200px; }
-#img1-3-draggable { top: 0px;   right: 0px; }
-#img2-1-draggable { top: 220px; right: 400px; }
-#img2-2-draggable { top: 220px; right: 200px; }
-#img2-3-draggable { top: 220px; right: 0px; }
-#img3-1-draggable { top: 440px; right: 400px; }
-#img3-2-draggable { top: 440px; right: 200px; }
-#img3-3-draggable { top: 440px; right: 0px; }
+/* Row 1 (top) */
+#img1-1-draggable { top: 50px; right: 400px; }
+#img1-2-draggable { top: 50px; right: 230px; }
+#img1-3-draggable { top: 50px; right: 60px; }
 
-/* ---------------- DROPPED PIECE STYLING ---------------- */
-.puzzle-grid-drop img.dropped {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+/* Row 2 (middle) */
+#img2-1-draggable { top: 230px; right: 400px; }
+#img2-2-draggable { top: 230px; right: 230px; }
+#img2-3-draggable { top: 230px; right: 60px; }
 
+/* Row 3 (bottom) */
+#img3-1-draggable { top: 410px; right: 400px; }
+#img3-2-draggable { top: 410px; right: 230px; }
+#img3-3-draggable { to
