@@ -28,25 +28,26 @@ body{
 /* ---------------- PUZZLE PIECES ON RIGHT SIDE ---------------- */
 .draggable-piece {
     position: absolute;
-    width: 260px;  /* taller than wide */
-    height: 300px;
+    width: 200px;   /* max width suggestion */
+    height: 300px;  /* taller than grid, visually prominent */
     cursor: grab;
 }
 
+/* ---------------- STACK POSITIONING ---------------- */
 /* Column 1 */
 #img1-1-draggable { top: 0px;   right: 420px; }
 #img2-1-draggable { top: 320px; right: 420px; }
 #img3-1-draggable { top: 640px; right: 420px; }
 
 /* Column 2 */
-#img1-2-draggable { top: 0px;   right: 100px; }
-#img2-2-draggable { top: 320px; right: 100px; }
-#img3-2-draggable { top: 640px; right: 100px; }
+#img1-2-draggable { top: 0px;   right: 180px; }
+#img2-2-draggable { top: 320px; right: 180px; }
+#img3-2-draggable { top: 640px; right: 180px; }
 
 /* Column 3 */
-#img1-3-draggable { top: 0px;   right: -220px; }
-#img2-3-draggable { top: 320px; right: -220px; }
-#img3-3-draggable { top: 640px; right: -220px; }
+#img1-3-draggable { top: 0px;   right: -60px; }
+#img2-3-draggable { top: 320px; right: -60px; }
+#img3-3-draggable { top: 640px; right: -60px; }
 
 /* ---------------- DROPPED PIECE STYLING ---------------- */
 .puzzle-grid-drop img.dropped {
