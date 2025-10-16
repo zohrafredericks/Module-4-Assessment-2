@@ -1,17 +1,24 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Puzzle Game</title>
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="javascript/api.js"></script>
+  
+  <!-- Font Awesome for footer icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     /* ---------------- BODY ---------------- */
     body {
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100vh;
       background-color: deepskyblue;
       font-family: Arial, sans-serif;
+      position: relative;
     }
 
     /* ---------------- GRID CONTAINERS ---------------- */
@@ -20,7 +27,7 @@
       height: 200px;
       border: 2px dashed white;
       position: absolute;
-      overflow: hidden; /* keeps dropped piece inside */
+      overflow: hidden;
     }
 
     /* Grid positions */
@@ -34,17 +41,16 @@
     #grid3-2 { left: 200px; top: 400px; }
     #grid3-3 { left: 400px; top: 400px; }
 
-    /* Ensure grid images fill container */
     .puzzle-grid-drop img {
       width: 100%;
       height: 100%;
       display: block;
     }
 
-    /* ---------------- PUZZLE PIECES ON RIGHT SIDE ---------------- */
+    /* ---------------- PUZZLE PIECES ON RIGHT ---------------- */
     .draggable-piece {
       position: absolute;
-      width: 200px;   /* now bigger */
+      width: 200px;
       height: 200px;
       cursor: grab;
     }
@@ -67,6 +73,25 @@
       left: 0;
       width: 100%;
       height: 100%;
+    }
+
+    /* ---------------- STICKY FOOTER ---------------- */
+    .puzzle-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      color: #ffb6c1; /* light pink */
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: rgba(0,0,0,0.1);
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .puzzle-footer i {
+      margin: 0 5px;
     }
   </style>
 </head>
@@ -139,7 +164,16 @@
     }
   </script>
 
+  <!-- Sticky Footer -->
+  <footer class="puzzle-footer">
+    <p>
+      🧩 Puzzle Fun! &nbsp;
+      <i class="fa-solid fa-heart"></i> &nbsp;
+      <i class="fa-solid fa-star"></i> &nbsp;
+      <i class="fa-solid fa-smile"></i>
+    </p>
+  </footer>
+
 </body>
 </html>
 
-    
